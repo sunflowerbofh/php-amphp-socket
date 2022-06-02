@@ -1,0 +1,5 @@
+amphp-socket (1.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1012253).
+
+ -- Katharina Drexel <katharina.drexel@bfh.ch>  Tue, 03 May 2022 11:40:46 +0200

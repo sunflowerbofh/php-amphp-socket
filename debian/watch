@@ -1,0 +1,3 @@
+version=4
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/php-amphp-socket-$1\.tar\.gz/ \
+https://github.com/amphp/socket/tags .*/v?(\d\S+)\.tar\.gz

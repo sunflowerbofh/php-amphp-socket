@@ -1,0 +1,33 @@
+Source: amphp-socket
+Section: php
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Homepage: https://github.com/amphp/socket
+Vcs-Browser: https://github.com/sunflowerbofh/php-amphp-socket
+Vcs-Git: https://github.com/sunflowerbofh/php-amphp-socket.git
+
+Package: php-amphp-socket
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ ${phpcomposer:Debian-conflict},
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: ${phpcomposer:description}
+ Amp is a non-blocking concurrency framework for PHP. It provides an event loop,
+ promises and streams as a base for asynchronous programming.
+ .
+ amphp/socket is a socket library for establishing and encrypting non-blocking
+ sockets PHP based on Amp.
